@@ -5,5 +5,5 @@ Test automation framework(API/WEB/APP)
 DDT
 
 # API requests module
-https://pypi.org/project/requests/
+(https://pypi.org/project/requests/)
 |- examples
