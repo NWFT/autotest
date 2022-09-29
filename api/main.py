@@ -2,7 +2,7 @@
 import unittest
 from BeautifulReport import BeautifulReport
 
-from api.utils.handle_path import cases_dir, reports_dir
+from api.utils.path_handler import cases_dir, reports_dir
 
 
 # Retrieve test cases
