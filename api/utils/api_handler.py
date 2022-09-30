@@ -1,7 +1,12 @@
+import json
+
 import requests
 
+from api.utils.config_handler import conf
+from api.utils.my_logger import logger
 
-def header_handler(token=None):
+
+def __header_handler(token=None):
     """
     Generate headers for requests.
     If special header needed, put it here.
@@ -15,6 +20,24 @@ def header_handler(token=None):
     return headers
 
 
+# process url
+def __process_url(url):
+    # if not start with '/', add and return full url
+    base_url = conf.get("server", "base_url")
+    if url.startswith("/"):
+        return base_url + url
+    else:
+        return base_url + '/' + url
+
+
+# process data
+def __process_data(data):
+    # if data is not None and is string
+    if data is not None and isinstance(data, str):
+        return json.loads(data)
+    return data
+
+
 def send_requests(method, url, data=None, token=None):
     """
     Get request header
@@ -25,21 +48,36 @@ def send_requests(method, url, data=None, token=None):
     :param token: token after login
     :return:
     """
-    headers = header_handler(token)
+    logger.info("Send a HTTP request.")
+    headers = __header_handler(token)
+
+    # get a full url
+    url = __process_url(url)
+    # transfer string into json dict, if str input
+    data = __process_data(data)
+
+    logger.info(f"HTTP Header is {headers}.")
+    logger.info(f"HTTP Method is {method}.")
+    logger.info(f"HTTP Url is {url}.")
+    logger.info(f"HTTP request data is {data}.")
+
+    # according 'method' to send request
     if method.upper() == "GET":
         resp = requests.get(url, data, headers=headers)
-    else:
+    else:  # POST currently
         resp = requests.post(url, json=data, headers=headers)
 
+    logger.info(f"HTTP Response status code is {resp.status_code}.")
+    logger.info(f"HTTP Response data is {resp.json()}.")
     return resp
 
 
 if __name__ == '__main__':
-    url = "http://www.alex-info.ca:8000/paymall_admin/authorizations/"
+    test_url = "/paymall_admin/authorizations/"
     payload = {"username": "aaaaaa", "password": "qqqqqqqq"}
-    resp = send_requests("POST", url, payload)
+    resp = send_requests("POST", test_url, payload)
 
     access_token = resp.json()['access']
-    count_url = "http://www.alex-info.ca:8000/paymall_admin/statistical/total_count/"
+    count_url = "/paymall_admin/statistical/total_count/"
     count_resp = send_requests("GET", count_url, token=access_token)
     print(count_resp.json())

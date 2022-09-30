@@ -26,8 +26,13 @@ class HandleExcel:
                 values.append(val.value)
             # zip to dict with titles
             res = dict(zip(titles, values))
+
             # transfer string into json format
-            res["request_data"] = json.loads(res["request_data"])
+            # res["request_data"] = json.loads(res["request_data"])
+            # For this reason: some value in excel-file are dynamic values
+            # so, can not transfer into json dict now.
+            # keep the original values as string
+
             all_data.append(res)
         return all_data
 
