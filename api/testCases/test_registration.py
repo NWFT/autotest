@@ -34,7 +34,6 @@ class TestRegister(unittest.TestCase):
         # test steps, test data
         # replace some dynamic values before send request.
         # replace '#phone#' with 'get_new_phone_number'
-        case = replace_mark_with_value(case, )
         if case["request_data"].find("#phone#") != -1:
             pn = get_new_phone_number()
             case = replace_mark_with_value(case, "#phone#", pn)

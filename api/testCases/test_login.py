@@ -6,6 +6,7 @@ from api.utils.excel_file_handler import HandleExcel
 from api.utils.myddt import ddt, data
 from api.utils.path_handler import data_dir
 from api.utils.my_logger import logger
+from api.utils.replace_test_data_values_handler import replace_mark_with_value
 
 he = HandleExcel(data_dir + "\\api_test_cases_single.xlsx", "login")
 cases = he.read_all_data()
@@ -13,7 +14,7 @@ he.close_file()
 
 
 @ddt
-class TestRegister(unittest.TestCase):
+class TestLogin(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls) -> None:
@@ -24,12 +25,18 @@ class TestRegister(unittest.TestCase):
         logger.info("======  Login cases end.  ========")
 
     @data(*cases)
-    def test_register(self, case):
+    def test_login(self, case):
         logger.info("*********   Case_{}：{}   *********".format(case["id"], case["title"]))
-        expected = eval(case["expected"])
         # test steps, test data
         response = send_requests(case["method"], case["url"], case["request_data"])
         # Assert - code == 0 msg == ok
+
+        # replace the '"#refresh_token#' and '#access_token#', if needed
+        if case["expected"].find("#refresh_token#") != -1:
+            case = replace_mark_with_value(case, "#refresh_token#", response.json()["refresh"])
+        if case["expected"].find("#access_token#") != -1:
+            case = replace_mark_with_value(case, "#access_token#", response.json()["access"])
+        expected = eval(case["expected"])
         logger.info("Expected result：{}".format(case["expected"]))
 
         try:
