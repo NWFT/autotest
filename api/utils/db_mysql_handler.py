@@ -36,7 +36,7 @@ class HandleDB(object):
         return self.cursor.fetchall()
 
     def get_count(self, sql):
-        self.conn.commit()
+        # self.conn.commit()
         return self.cursor.execute(sql)
 
     def close_connections(self):

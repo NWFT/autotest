@@ -42,7 +42,7 @@ def get_new_phone_number():
         num = __phone_number_generator()
         if not __check_number(num):
             break
-    handle_db.close_connections()
+    # handle_db.close_connections()
     return num
 
 

@@ -4,6 +4,16 @@ import os
 from api.utils.path_handler import conf_dir
 
 
+class EnvData(object):
+    """
+    For Environment values during test cases running.
+    eg.,
+    setattr(EnvData, "token", "XXX")
+    getattr(EnvData, "token")
+    """
+    pass
+
+
 class HandleConfig(ConfigParser):
 
     def __init__(self, file_dir):
