@@ -1,6 +1,10 @@
-
+import os
+import sys
 import unittest
 from BeautifulReport import BeautifulReport
+
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+sys.path.append(os.path.dirname(SCRIPT_DIR))
 
 from api.utils.path_handler import cases_dir, reports_dir
 
