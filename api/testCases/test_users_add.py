@@ -18,6 +18,7 @@
     4-4 Assert response with expected results
 """
 import json
+import os
 import unittest
 
 from api.utils.api_handler import send_requests
@@ -32,7 +33,8 @@ from api.utils.random_string_generator import get_random_string, get_new_name
 from api.utils.replace_test_data_values_handler import replace_mark_with_value, replace_case_with_regular
 from api.utils.users_handler import get_admin_user
 
-he = HandleExcel(data_dir + "\\api_test_cases_single.xlsx", "users_add")
+file_dir = os.path.join(data_dir, "api_test_cases_single.xlsx")
+he = HandleExcel(file_dir, "users_add")
 cases = he.read_all_data()
 he.close_file()
 

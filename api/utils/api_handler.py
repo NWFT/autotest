@@ -26,6 +26,8 @@ def __process_url(url):
     base_url = conf.get("server", "base_url")
     if url.startswith("/"):
         return base_url + url
+    elif url.startswith("http://") or url.startswith("https://"):
+        return url
     else:
         return base_url + '/' + url
 

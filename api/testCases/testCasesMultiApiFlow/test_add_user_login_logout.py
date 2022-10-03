@@ -9,6 +9,7 @@
 4. logout
 """
 import json
+import os
 import unittest
 
 from api.utils.api_handler import send_requests
@@ -22,7 +23,8 @@ from api.utils.random_string_generator import get_new_name, get_random_string
 from api.utils.replace_test_data_values_handler import replace_case_with_regular, replace_mark_with_value
 from api.utils.users_handler import get_admin_user
 
-he = HandleExcel(data_dir + "\\api_test_cases_multi_flow.xlsx", "users")
+file_dir = os.path.join(data_dir, "api_test_cases_multi_flow.xlsx")
+he = HandleExcel(file_dir, "users")
 cases = he.read_all_data()
 he.close_file()
 

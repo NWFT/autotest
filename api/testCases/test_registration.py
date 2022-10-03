@@ -1,4 +1,5 @@
 import json
+import os
 import unittest
 
 from api.utils.api_handler import send_requests
@@ -10,7 +11,8 @@ from api.utils.my_logger import logger
 from api.utils.random_phone_number_generator import get_new_phone_number
 from api.utils.replace_test_data_values_handler import replace_mark_with_value
 
-he = HandleExcel(data_dir + "\\api_test_cases_single.xlsx", "register")
+file_dir = os.path.join(data_dir, "api_test_cases_single.xlsx")
+he = HandleExcel(file_dir, "register")
 cases = he.read_all_data()
 he.close_file()
 
