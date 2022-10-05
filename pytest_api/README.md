@@ -24,6 +24,3 @@ test configuration.
 
 # main.py
 retrieve all test cases and run with logs and reports.
-
-# examples(temporary)
-small features test scripts.
