@@ -16,7 +16,7 @@ def ini_class():
 
 
 @pytest.mark.usefixtures("ini")
-def test_abc(ini):
+def a_test_abc(ini):
     print("========function=========")
     print(ini)
 
@@ -25,11 +25,11 @@ def test_abc(ini):
 class TestDay(object):
 
     # @pytest.mark.usefixtures("ini")
-    def test_new1(self):
+    def a_test_new1(self):
         print("------class method1-----")
 
-    def test_new2(self):
+    def a_test_new2(self):
         print("------class method2-----")
 
-    def test_new3(self):
+    def a_test_new3(self):
         print("------class method3-----")

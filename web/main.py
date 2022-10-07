@@ -7,6 +7,6 @@ if __name__ == '__main__':
                  # "-m demo or test",
                  "--html=./output/report.html",
                  "--alluredir=./output/allure_dir",
-                 "--rerun", "2", "--rerun-delay", "5"
+                 # "--rerun", "2", "--rerun-delay", "5",
                  ])
 
