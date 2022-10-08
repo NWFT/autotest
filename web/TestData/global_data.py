@@ -24,3 +24,8 @@ CHANGE_PSW_URL = os.path.join(BASE_URL, "pass/")
 # carts
 CARTS_URL = os.path.join(BASE_URL, "carts/")
 # carts
+
+# normal login user/admin
+normal_user = {"user": "aaaaaa", "password": "qqqqqqqq"}
+admin_user = {"user": "aaaaaa", "password": "qqqqqqqq"}
+
