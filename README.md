@@ -1,10 +1,17 @@
 # autotest
 Test automation framework(API/WEB/APP)
 
-# unittest
-DDT
+# api
+Python Unittest framework.
 
-# API requests module
-(https://pypi.org/project/requests/)
+# pytest_api
+Pytest Restful API framework.
+(requests)
 
-|- examples
+# web
+Pytest WEB framework.
+(Selenium, PageObjects)
+
+# app
+Pytest APP framework.
+(Appinum, iOS/Android)
