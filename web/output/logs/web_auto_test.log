@@ -1,1 +1,212 @@
 
+2022-10-09 10:25:46,137 web_auto_test INFO conftest.py-22 line：======== class fixture, open browser, goto login page =======
+2022-10-09 10:25:57,387 web_auto_test INFO conftest.py-51 line：======== class fixture, login page, login with global normal user =======
+2022-10-09 10:25:57,387 web_auto_test INFO basepage.py-44 line：With Login_input_username, Waiting for element ('name', 'username') visible.
+2022-10-09 10:25:57,463 web_auto_test INFO basepage.py-57 line：Spent 0.075 seconds, on waiting.
+2022-10-09 10:25:57,463 web_auto_test INFO basepage.py-102 line：With Login_input_username, Finding element ('name', 'username').
+2022-10-09 10:25:57,478 web_auto_test INFO basepage.py-151 line：With Login_input_username, send text aaaaaa to ('name', 'username').
+2022-10-09 10:25:57,699 web_auto_test INFO basepage.py-44 line：With Login_input_password, Waiting for element ('name', 'password') visible.
+2022-10-09 10:25:57,743 web_auto_test INFO basepage.py-57 line：Spent 0.044 seconds, on waiting.
+2022-10-09 10:25:57,744 web_auto_test INFO basepage.py-102 line：With Login_input_password, Finding element ('name', 'password').
+2022-10-09 10:25:57,752 web_auto_test INFO basepage.py-151 line：With Login_input_password, send text qqqqqqqq to ('name', 'password').
+2022-10-09 10:25:57,897 web_auto_test INFO basepage.py-44 line：With Login_click_submit, Waiting for element ('class name', 'input_submit') visible.
+2022-10-09 10:25:57,926 web_auto_test INFO basepage.py-57 line：Spent 0.029 seconds, on waiting.
+2022-10-09 10:25:57,926 web_auto_test INFO basepage.py-102 line：With Login_click_submit, Finding element ('class name', 'input_submit').
+2022-10-09 10:25:57,934 web_auto_test INFO basepage.py-127 line：With Login_click_submit, Click element ('class name', 'input_submit').
+2022-10-09 10:26:00,560 web_auto_test INFO conftest.py-58 line：======== function fixture, goto home page =======
+2022-10-09 10:26:01,391 web_auto_test INFO test_cart.py-38 line：======== test =======
+2022-10-09 10:26:01,391 web_auto_test INFO basepage.py-44 line：With Homepage_Product-list-level1, Waiting for element ('xpath', '//div[@class="level1"]') visible.
+2022-10-09 10:26:01,441 web_auto_test INFO basepage.py-57 line：Spent 0.049 seconds, on waiting.
+2022-10-09 10:26:01,442 web_auto_test INFO basepage.py-102 line：With Homepage_Product-list-level1, Finding element ('xpath', '//div[@class="level1"]').
+2022-10-09 10:26:01,734 web_auto_test INFO basepage.py-44 line：With Homepage_Click-to-product-list, Waiting for element ('xpath', '//div[@class="group_detail fl"]/a') visible.
+2022-10-09 10:26:02,322 web_auto_test INFO basepage.py-57 line：Spent 0.588 seconds, on waiting.
+2022-10-09 10:26:02,322 web_auto_test INFO basepage.py-102 line：With Homepage_Click-to-product-list, Finding element ('xpath', '//div[@class="group_detail fl"]/a').
+2022-10-09 10:26:02,334 web_auto_test INFO basepage.py-127 line：With Homepage_Click-to-product-list, Click element ('xpath', '//div[@class="group_detail fl"]/a').
+2022-10-09 10:26:03,400 web_auto_test INFO basepage.py-44 line：With ProductListPage_Click-to-detail, Waiting for element ('xpath', '//div[@class="r_wrap fr clearfix"]//h4') visible.
+2022-10-09 10:26:03,528 web_auto_test INFO basepage.py-57 line：Spent 0.127 seconds, on waiting.
+2022-10-09 10:26:03,528 web_auto_test INFO basepage.py-102 line：With ProductListPage_Click-to-detail, Finding element ('xpath', '//div[@class="r_wrap fr clearfix"]//h4').
+2022-10-09 10:26:03,551 web_auto_test INFO basepage.py-127 line：With ProductListPage_Click-to-detail, Click element ('xpath', '//div[@class="r_wrap fr clearfix"]//h4').
+2022-10-09 10:26:04,671 web_auto_test INFO basepage.py-44 line：With ProductDetailPage_Click-to-add-cart, Waiting for element ('id', 'add_cart') visible.
+2022-10-09 10:26:04,716 web_auto_test INFO basepage.py-57 line：Spent 0.045 seconds, on waiting.
+2022-10-09 10:26:04,716 web_auto_test INFO basepage.py-102 line：With ProductDetailPage_Click-to-add-cart, Finding element ('id', 'add_cart').
+2022-10-09 10:26:04,750 web_auto_test INFO basepage.py-127 line：With ProductDetailPage_Click-to-add-cart, Click element ('id', 'add_cart').
+2022-10-09 10:26:05,823 web_auto_test INFO basepage.py-69 line：With ProductDetailPage_Get-product-name, Waiting for page contains element ('xpath', '//div[@class="goods_detail_list fr"]/h3').
+2022-10-09 10:26:05,842 web_auto_test INFO basepage.py-82 line：Spent 0.019 seconds, on waiting.
+2022-10-09 10:26:05,843 web_auto_test INFO basepage.py-102 line：With ProductDetailPage_Get-product-name, Finding element ('xpath', '//div[@class="goods_detail_list fr"]/h3').
+2022-10-09 10:26:05,855 web_auto_test INFO basepage.py-174 line：With ProductDetailPage_Get-product-name, Get element ('xpath', '//div[@class="goods_detail_list fr"]/h3') text.
+2022-10-09 10:26:05,881 web_auto_test INFO basepage.py-185 line：Text value：Apple iPhone 8 Plus (A1864) 64GB 金色 移动联通电信4G手机
+2022-10-09 10:26:05,881 web_auto_test INFO test_cart.py-47 line：Product name in detail page is: Apple iPhone 8 Plus (A1864) 64GB 金色 移动联通电信4G手机
+2022-10-09 10:26:05,881 web_auto_test INFO basepage.py-44 line：With ProductDetailPage_Click-to-cart-detail, Waiting for element ('xpath', '//a[@class="cart_name fl"]') visible.
+2022-10-09 10:26:05,911 web_auto_test INFO basepage.py-57 line：Spent 0.029 seconds, on waiting.
+2022-10-09 10:26:05,911 web_auto_test INFO basepage.py-102 line：With ProductDetailPage_Click-to-cart-detail, Finding element ('xpath', '//a[@class="cart_name fl"]').
+2022-10-09 10:26:05,921 web_auto_test INFO basepage.py-127 line：With ProductDetailPage_Click-to-cart-detail, Click element ('xpath', '//a[@class="cart_name fl"]').
+2022-10-09 10:26:06,263 web_auto_test INFO basepage.py-69 line：With CartDetailPage_Get-product-name, Waiting for page contains element ('xpath', '//ul[@class="cart_list_td clearfix"]//li[@class="col03"]').
+2022-10-09 10:26:06,320 web_auto_test INFO basepage.py-82 line：Spent 0.056 seconds, on waiting.
+2022-10-09 10:26:06,321 web_auto_test INFO basepage.py-102 line：With CartDetailPage_Get-product-name, Finding element ('xpath', '//ul[@class="cart_list_td clearfix"]//li[@class="col03"]').
+2022-10-09 10:26:06,338 web_auto_test INFO basepage.py-174 line：With CartDetailPage_Get-product-name, Get element ('xpath', '//ul[@class="cart_list_td clearfix"]//li[@class="col03"]') text.
+2022-10-09 10:26:06,361 web_auto_test INFO basepage.py-185 line：Text value：Apple iPhone 8 Plus (A1864) 64GB 金色 移动联通电信4G手机
+2022-10-09 10:26:06,361 web_auto_test INFO basepage.py-44 line：With CartPage_Delete-product-item, Waiting for element ('xpath', '//li[@class="col08"]/a') visible.
+2022-10-09 10:26:06,391 web_auto_test INFO basepage.py-57 line：Spent 0.030 seconds, on waiting.
+2022-10-09 10:26:06,392 web_auto_test INFO basepage.py-102 line：With CartPage_Delete-product-item, Finding element ('xpath', '//li[@class="col08"]/a').
+2022-10-09 10:26:06,402 web_auto_test INFO basepage.py-127 line：With CartPage_Delete-product-item, Click element ('xpath', '//li[@class="col08"]/a').
+2022-10-09 10:26:06,483 web_auto_test INFO test_cart.py-54 line：Product name in cart page is: Apple iPhone 8 Plus (A1864) 64GB 金色 移动联通电信4G手机
+2022-10-09 10:26:06,491 web_auto_test INFO conftest.py-27 line：======== class fixture, close browser =======
+2022-10-09 10:29:21,446 web_auto_test INFO conftest.py-22 line：======== class fixture, open browser, goto login page =======
+2022-10-09 10:29:30,072 web_auto_test INFO conftest.py-51 line：======== class fixture, login page, login with global normal user =======
+2022-10-09 10:29:30,072 web_auto_test INFO basepage.py-44 line：With Login_input_username, Waiting for element ('name', 'username') visible.
+2022-10-09 10:29:30,150 web_auto_test INFO basepage.py-57 line：Spent 0.078 seconds, on waiting.
+2022-10-09 10:29:30,151 web_auto_test INFO basepage.py-102 line：With Login_input_username, Finding element ('name', 'username').
+2022-10-09 10:29:30,167 web_auto_test INFO basepage.py-151 line：With Login_input_username, send text aaaaaa to ('name', 'username').
+2022-10-09 10:29:30,322 web_auto_test INFO basepage.py-44 line：With Login_input_password, Waiting for element ('name', 'password') visible.
+2022-10-09 10:29:30,357 web_auto_test INFO basepage.py-57 line：Spent 0.035 seconds, on waiting.
+2022-10-09 10:29:30,357 web_auto_test INFO basepage.py-102 line：With Login_input_password, Finding element ('name', 'password').
+2022-10-09 10:29:30,368 web_auto_test INFO basepage.py-151 line：With Login_input_password, send text qqqqqqqq to ('name', 'password').
+2022-10-09 10:29:30,513 web_auto_test INFO basepage.py-44 line：With Login_click_submit, Waiting for element ('class name', 'input_submit') visible.
+2022-10-09 10:29:30,547 web_auto_test INFO basepage.py-57 line：Spent 0.033 seconds, on waiting.
+2022-10-09 10:29:30,548 web_auto_test INFO basepage.py-102 line：With Login_click_submit, Finding element ('class name', 'input_submit').
+2022-10-09 10:29:30,557 web_auto_test INFO basepage.py-127 line：With Login_click_submit, Click element ('class name', 'input_submit').
+2022-10-09 10:29:33,089 web_auto_test INFO conftest.py-58 line：======== function fixture, goto home page =======
+2022-10-09 10:29:35,082 web_auto_test INFO test_cart.py-38 line：======== test =======
+2022-10-09 10:29:35,082 web_auto_test INFO basepage.py-44 line：With Homepage_Product-list-level1, Waiting for element ('xpath', '//div[@class="level1"]') visible.
+2022-10-09 10:29:35,157 web_auto_test INFO basepage.py-57 line：Spent 0.074 seconds, on waiting.
+2022-10-09 10:29:35,158 web_auto_test INFO basepage.py-102 line：With Homepage_Product-list-level1, Finding element ('xpath', '//div[@class="level1"]').
+2022-10-09 10:29:35,443 web_auto_test INFO basepage.py-44 line：With Homepage_Click-to-product-list, Waiting for element ('xpath', '//div[@class="group_detail fl"]/a') visible.
+2022-10-09 10:29:35,474 web_auto_test INFO basepage.py-57 line：Spent 0.031 seconds, on waiting.
+2022-10-09 10:29:35,475 web_auto_test INFO basepage.py-102 line：With Homepage_Click-to-product-list, Finding element ('xpath', '//div[@class="group_detail fl"]/a').
+2022-10-09 10:29:35,484 web_auto_test INFO basepage.py-127 line：With Homepage_Click-to-product-list, Click element ('xpath', '//div[@class="group_detail fl"]/a').
+2022-10-09 10:29:36,703 web_auto_test INFO basepage.py-44 line：With ProductListPage_Click-to-detail, Waiting for element ('xpath', '//div[@class="r_wrap fr clearfix"]//h4') visible.
+2022-10-09 10:29:36,764 web_auto_test INFO basepage.py-57 line：Spent 0.060 seconds, on waiting.
+2022-10-09 10:29:36,765 web_auto_test INFO basepage.py-102 line：With ProductListPage_Click-to-detail, Finding element ('xpath', '//div[@class="r_wrap fr clearfix"]//h4').
+2022-10-09 10:29:36,777 web_auto_test INFO basepage.py-127 line：With ProductListPage_Click-to-detail, Click element ('xpath', '//div[@class="r_wrap fr clearfix"]//h4').
+2022-10-09 10:29:37,948 web_auto_test INFO basepage.py-44 line：With ProductDetailPage_Click-to-add-cart, Waiting for element ('id', 'add_cart') visible.
+2022-10-09 10:29:37,980 web_auto_test INFO basepage.py-57 line：Spent 0.032 seconds, on waiting.
+2022-10-09 10:29:37,980 web_auto_test INFO basepage.py-102 line：With ProductDetailPage_Click-to-add-cart, Finding element ('id', 'add_cart').
+2022-10-09 10:29:37,987 web_auto_test INFO basepage.py-127 line：With ProductDetailPage_Click-to-add-cart, Click element ('id', 'add_cart').
+2022-10-09 10:29:39,134 web_auto_test INFO basepage.py-69 line：With ProductDetailPage_Get-product-name, Waiting for page contains element ('xpath', '//div[@class="goods_detail_list fr"]/h3').
+2022-10-09 10:29:39,154 web_auto_test INFO basepage.py-82 line：Spent 0.019 seconds, on waiting.
+2022-10-09 10:29:39,155 web_auto_test INFO basepage.py-102 line：With ProductDetailPage_Get-product-name, Finding element ('xpath', '//div[@class="goods_detail_list fr"]/h3').
+2022-10-09 10:29:39,169 web_auto_test INFO basepage.py-174 line：With ProductDetailPage_Get-product-name, Get element ('xpath', '//div[@class="goods_detail_list fr"]/h3') text.
+2022-10-09 10:29:39,194 web_auto_test INFO basepage.py-185 line：Text value：Apple iPhone 8 Plus (A1864) 64GB 金色 移动联通电信4G手机
+2022-10-09 10:29:39,195 web_auto_test INFO test_cart.py-47 line：Product name in detail page is: Apple iPhone 8 Plus (A1864) 64GB 金色 移动联通电信4G手机
+2022-10-09 10:29:39,195 web_auto_test INFO basepage.py-44 line：With ProductDetailPage_Click-to-cart-detail, Waiting for element ('xpath', '//a[@class="cart_name fl"]') visible.
+2022-10-09 10:29:39,221 web_auto_test INFO basepage.py-57 line：Spent 0.026 seconds, on waiting.
+2022-10-09 10:29:39,222 web_auto_test INFO basepage.py-102 line：With ProductDetailPage_Click-to-cart-detail, Finding element ('xpath', '//a[@class="cart_name fl"]').
+2022-10-09 10:29:39,230 web_auto_test INFO basepage.py-127 line：With ProductDetailPage_Click-to-cart-detail, Click element ('xpath', '//a[@class="cart_name fl"]').
+2022-10-09 10:29:39,507 web_auto_test INFO basepage.py-69 line：With CartDetailPage_Get-product-name, Waiting for page contains element ('xpath', '//ul[@class="cart_list_td clearfix"]//li[@class="col03"]').
+2022-10-09 10:29:39,525 web_auto_test INFO basepage.py-82 line：Spent 0.017 seconds, on waiting.
+2022-10-09 10:29:39,525 web_auto_test INFO basepage.py-102 line：With CartDetailPage_Get-product-name, Finding element ('xpath', '//ul[@class="cart_list_td clearfix"]//li[@class="col03"]').
+2022-10-09 10:29:39,532 web_auto_test INFO basepage.py-174 line：With CartDetailPage_Get-product-name, Get element ('xpath', '//ul[@class="cart_list_td clearfix"]//li[@class="col03"]') text.
+2022-10-09 10:29:39,551 web_auto_test INFO basepage.py-185 line：Text value：Apple iPhone 8 Plus (A1864) 64GB 金色 移动联通电信4G手机
+2022-10-09 10:29:39,551 web_auto_test INFO basepage.py-44 line：With CartPage_Delete-product-item, Waiting for element ('xpath', '//li[@class="col08"]/a') visible.
+2022-10-09 10:29:39,598 web_auto_test INFO basepage.py-57 line：Spent 0.047 seconds, on waiting.
+2022-10-09 10:29:39,598 web_auto_test INFO basepage.py-102 line：With CartPage_Delete-product-item, Finding element ('xpath', '//li[@class="col08"]/a').
+2022-10-09 10:29:39,607 web_auto_test INFO basepage.py-127 line：With CartPage_Delete-product-item, Click element ('xpath', '//li[@class="col08"]/a').
+2022-10-09 10:29:39,646 web_auto_test INFO test_cart.py-54 line：Product name in cart page is: Apple iPhone 8 Plus (A1864) 64GB 金色 移动联通电信4G手机
+2022-10-09 10:29:39,652 web_auto_test INFO conftest.py-27 line：======== class fixture, close browser =======
+2022-10-09 10:29:41,980 web_auto_test INFO conftest.py-22 line：======== class fixture, open browser, goto login page =======
+2022-10-09 10:29:46,832 web_auto_test INFO conftest.py-33 line：======== function fixture, goto login page =======
+2022-10-09 10:29:46,976 web_auto_test INFO basepage.py-44 line：With Login_input_username, Waiting for element ('name', 'username') visible.
+2022-10-09 10:29:47,050 web_auto_test INFO basepage.py-57 line：Spent 0.073 seconds, on waiting.
+2022-10-09 10:29:47,050 web_auto_test INFO basepage.py-102 line：With Login_input_username, Finding element ('name', 'username').
+2022-10-09 10:29:47,059 web_auto_test INFO basepage.py-151 line：With Login_input_username, send text aaaaaa to ('name', 'username').
+2022-10-09 10:29:47,322 web_auto_test INFO basepage.py-44 line：With Login_input_password, Waiting for element ('name', 'password') visible.
+2022-10-09 10:29:47,366 web_auto_test INFO basepage.py-57 line：Spent 0.044 seconds, on waiting.
+2022-10-09 10:29:47,366 web_auto_test INFO basepage.py-102 line：With Login_input_password, Finding element ('name', 'password').
+2022-10-09 10:29:47,377 web_auto_test INFO basepage.py-151 line：With Login_input_password, send text qqqqqqqq to ('name', 'password').
+2022-10-09 10:29:47,503 web_auto_test INFO basepage.py-44 line：With Login_click_submit, Waiting for element ('class name', 'input_submit') visible.
+2022-10-09 10:29:47,533 web_auto_test INFO basepage.py-57 line：Spent 0.029 seconds, on waiting.
+2022-10-09 10:29:47,533 web_auto_test INFO basepage.py-102 line：With Login_click_submit, Finding element ('class name', 'input_submit').
+2022-10-09 10:29:47,542 web_auto_test INFO basepage.py-127 line：With Login_click_submit, Click element ('class name', 'input_submit').
+2022-10-09 10:29:49,496 web_auto_test INFO basepage.py-44 line：With Homepage_Check_exist_button, Waiting for element ('xpath', '//a[@class="quit"]') visible.
+2022-10-09 10:29:49,545 web_auto_test INFO basepage.py-57 line：Spent 0.050 seconds, on waiting.
+2022-10-09 10:29:49,551 web_auto_test INFO conftest.py-33 line：======== function fixture, goto login page =======
+2022-10-09 10:29:49,699 web_auto_test INFO basepage.py-44 line：With Login_input_username, Waiting for element ('name', 'username') visible.
+2022-10-09 10:29:49,736 web_auto_test INFO basepage.py-57 line：Spent 0.036 seconds, on waiting.
+2022-10-09 10:29:49,737 web_auto_test INFO basepage.py-102 line：With Login_input_username, Finding element ('name', 'username').
+2022-10-09 10:29:49,749 web_auto_test INFO basepage.py-151 line：With Login_input_username, send text  to ('name', 'username').
+2022-10-09 10:29:49,903 web_auto_test INFO basepage.py-44 line：With Login_input_password, Waiting for element ('name', 'password') visible.
+2022-10-09 10:29:49,939 web_auto_test INFO basepage.py-57 line：Spent 0.036 seconds, on waiting.
+2022-10-09 10:29:49,940 web_auto_test INFO basepage.py-102 line：With Login_input_password, Finding element ('name', 'password').
+2022-10-09 10:29:49,950 web_auto_test INFO basepage.py-151 line：With Login_input_password, send text qqqqqqqq to ('name', 'password').
+2022-10-09 10:29:50,047 web_auto_test INFO basepage.py-44 line：With Login_click_submit, Waiting for element ('class name', 'input_submit') visible.
+2022-10-09 10:29:50,068 web_auto_test INFO basepage.py-57 line：Spent 0.021 seconds, on waiting.
+2022-10-09 10:29:50,069 web_auto_test INFO basepage.py-102 line：With Login_click_submit, Finding element ('class name', 'input_submit').
+2022-10-09 10:29:50,076 web_auto_test INFO basepage.py-127 line：With Login_click_submit, Click element ('class name', 'input_submit').
+2022-10-09 10:29:50,293 web_auto_test INFO basepage.py-69 line：With Login_Get_error_msg, Waiting for page contains element ('xpath', '//div[@id="error_info"]').
+2022-10-09 10:29:50,335 web_auto_test INFO basepage.py-82 line：Spent 0.041 seconds, on waiting.
+2022-10-09 10:29:50,335 web_auto_test INFO basepage.py-102 line：With Login_Get_error_msg, Finding element ('xpath', '//div[@id="error_info"]').
+2022-10-09 10:29:50,349 web_auto_test INFO basepage.py-174 line：With Login_Get_error_msg, Get element ('xpath', '//div[@id="error_info"]') text.
+2022-10-09 10:29:50,369 web_auto_test INFO basepage.py-185 line：Text value：缺少用户名或密码
+2022-10-09 10:29:50,376 web_auto_test INFO conftest.py-33 line：======== function fixture, goto login page =======
+2022-10-09 10:29:50,462 web_auto_test INFO basepage.py-44 line：With Login_input_username, Waiting for element ('name', 'username') visible.
+2022-10-09 10:29:50,547 web_auto_test INFO basepage.py-57 line：Spent 0.084 seconds, on waiting.
+2022-10-09 10:29:50,547 web_auto_test INFO basepage.py-102 line：With Login_input_username, Finding element ('name', 'username').
+2022-10-09 10:29:50,559 web_auto_test INFO basepage.py-151 line：With Login_input_username, send text aaa to ('name', 'username').
+2022-10-09 10:29:50,643 web_auto_test INFO basepage.py-44 line：With Login_input_password, Waiting for element ('name', 'password') visible.
+2022-10-09 10:29:50,670 web_auto_test INFO basepage.py-57 line：Spent 0.026 seconds, on waiting.
+2022-10-09 10:29:50,671 web_auto_test INFO basepage.py-102 line：With Login_input_password, Finding element ('name', 'password').
+2022-10-09 10:29:50,680 web_auto_test INFO basepage.py-151 line：With Login_input_password, send text qqqqqqqq to ('name', 'password').
+2022-10-09 10:29:50,820 web_auto_test INFO basepage.py-44 line：With Login_click_submit, Waiting for element ('class name', 'input_submit') visible.
+2022-10-09 10:29:50,927 web_auto_test INFO basepage.py-57 line：Spent 0.107 seconds, on waiting.
+2022-10-09 10:29:50,928 web_auto_test INFO basepage.py-102 line：With Login_click_submit, Finding element ('class name', 'input_submit').
+2022-10-09 10:29:50,936 web_auto_test INFO basepage.py-127 line：With Login_click_submit, Click element ('class name', 'input_submit').
+2022-10-09 10:29:51,440 web_auto_test INFO basepage.py-69 line：With Login_Get_error_msg, Waiting for page contains element ('xpath', '//div[@id="error_info"]').
+2022-10-09 10:29:51,592 web_auto_test INFO basepage.py-82 line：Spent 0.152 seconds, on waiting.
+2022-10-09 10:29:51,592 web_auto_test INFO basepage.py-102 line：With Login_Get_error_msg, Finding element ('xpath', '//div[@id="error_info"]').
+2022-10-09 10:29:51,629 web_auto_test INFO basepage.py-174 line：With Login_Get_error_msg, Get element ('xpath', '//div[@id="error_info"]') text.
+2022-10-09 10:29:51,662 web_auto_test INFO basepage.py-185 line：Text value：用户名不符合规则
+2022-10-09 10:29:51,670 web_auto_test INFO conftest.py-33 line：======== function fixture, goto login page =======
+2022-10-09 10:29:51,783 web_auto_test INFO basepage.py-44 line：With Login_input_username, Waiting for element ('name', 'username') visible.
+2022-10-09 10:29:51,828 web_auto_test INFO basepage.py-57 line：Spent 0.045 seconds, on waiting.
+2022-10-09 10:29:51,828 web_auto_test INFO basepage.py-102 line：With Login_input_username, Finding element ('name', 'username').
+2022-10-09 10:29:51,872 web_auto_test INFO basepage.py-151 line：With Login_input_username, send text aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa to ('name', 'username').
+2022-10-09 10:29:52,039 web_auto_test INFO basepage.py-44 line：With Login_input_password, Waiting for element ('name', 'password') visible.
+2022-10-09 10:29:52,063 web_auto_test INFO basepage.py-57 line：Spent 0.024 seconds, on waiting.
+2022-10-09 10:29:52,064 web_auto_test INFO basepage.py-102 line：With Login_input_password, Finding element ('name', 'password').
+2022-10-09 10:29:52,073 web_auto_test INFO basepage.py-151 line：With Login_input_password, send text qqqqqqqq to ('name', 'password').
+2022-10-09 10:29:52,175 web_auto_test INFO basepage.py-44 line：With Login_click_submit, Waiting for element ('class name', 'input_submit') visible.
+2022-10-09 10:29:52,196 web_auto_test INFO basepage.py-57 line：Spent 0.020 seconds, on waiting.
+2022-10-09 10:29:52,196 web_auto_test INFO basepage.py-102 line：With Login_click_submit, Finding element ('class name', 'input_submit').
+2022-10-09 10:29:52,204 web_auto_test INFO basepage.py-127 line：With Login_click_submit, Click element ('class name', 'input_submit').
+2022-10-09 10:29:52,440 web_auto_test INFO basepage.py-69 line：With Login_Get_error_msg, Waiting for page contains element ('xpath', '//div[@id="error_info"]').
+2022-10-09 10:29:52,453 web_auto_test INFO basepage.py-82 line：Spent 0.013 seconds, on waiting.
+2022-10-09 10:29:52,453 web_auto_test INFO basepage.py-102 line：With Login_Get_error_msg, Finding element ('xpath', '//div[@id="error_info"]').
+2022-10-09 10:29:52,463 web_auto_test INFO basepage.py-174 line：With Login_Get_error_msg, Get element ('xpath', '//div[@id="error_info"]') text.
+2022-10-09 10:29:52,480 web_auto_test INFO basepage.py-185 line：Text value：用户名不符合规则
+2022-10-09 10:29:52,486 web_auto_test INFO conftest.py-33 line：======== function fixture, goto login page =======
+2022-10-09 10:29:52,552 web_auto_test INFO basepage.py-44 line：With Login_input_username, Waiting for element ('name', 'username') visible.
+2022-10-09 10:29:52,575 web_auto_test INFO basepage.py-57 line：Spent 0.023 seconds, on waiting.
+2022-10-09 10:29:52,576 web_auto_test INFO basepage.py-102 line：With Login_input_username, Finding element ('name', 'username').
+2022-10-09 10:29:52,583 web_auto_test INFO basepage.py-151 line：With Login_input_username, send text aaaaaa to ('name', 'username').
+2022-10-09 10:29:52,680 web_auto_test INFO basepage.py-44 line：With Login_input_password, Waiting for element ('name', 'password') visible.
+2022-10-09 10:29:52,706 web_auto_test INFO basepage.py-57 line：Spent 0.026 seconds, on waiting.
+2022-10-09 10:29:52,707 web_auto_test INFO basepage.py-102 line：With Login_input_password, Finding element ('name', 'password').
+2022-10-09 10:29:52,718 web_auto_test INFO basepage.py-151 line：With Login_input_password, send text  to ('name', 'password').
+2022-10-09 10:29:52,823 web_auto_test INFO basepage.py-44 line：With Login_click_submit, Waiting for element ('class name', 'input_submit') visible.
+2022-10-09 10:29:52,848 web_auto_test INFO basepage.py-57 line：Spent 0.025 seconds, on waiting.
+2022-10-09 10:29:52,849 web_auto_test INFO basepage.py-102 line：With Login_click_submit, Finding element ('class name', 'input_submit').
+2022-10-09 10:29:52,861 web_auto_test INFO basepage.py-127 line：With Login_click_submit, Click element ('class name', 'input_submit').
+2022-10-09 10:29:53,055 web_auto_test INFO basepage.py-69 line：With Login_Get_error_msg, Waiting for page contains element ('xpath', '//div[@id="error_info"]').
+2022-10-09 10:29:53,074 web_auto_test INFO basepage.py-82 line：Spent 0.018 seconds, on waiting.
+2022-10-09 10:29:53,074 web_auto_test INFO basepage.py-102 line：With Login_Get_error_msg, Finding element ('xpath', '//div[@id="error_info"]').
+2022-10-09 10:29:53,089 web_auto_test INFO basepage.py-174 line：With Login_Get_error_msg, Get element ('xpath', '//div[@id="error_info"]') text.
+2022-10-09 10:29:53,112 web_auto_test INFO basepage.py-185 line：Text value：缺少用户名或密码
+2022-10-09 10:29:53,119 web_auto_test INFO conftest.py-33 line：======== function fixture, goto login page =======
+2022-10-09 10:29:53,182 web_auto_test INFO basepage.py-44 line：With Login_input_username, Waiting for element ('name', 'username') visible.
+2022-10-09 10:29:53,208 web_auto_test INFO basepage.py-57 line：Spent 0.025 seconds, on waiting.
+2022-10-09 10:29:53,208 web_auto_test INFO basepage.py-102 line：With Login_input_username, Finding element ('name', 'username').
+2022-10-09 10:29:53,218 web_auto_test INFO basepage.py-151 line：With Login_input_username, send text aaaaaa to ('name', 'username').
+2022-10-09 10:29:53,311 web_auto_test INFO basepage.py-44 line：With Login_input_password, Waiting for element ('name', 'password') visible.
+2022-10-09 10:29:53,330 web_auto_test INFO basepage.py-57 line：Spent 0.019 seconds, on waiting.
+2022-10-09 10:29:53,331 web_auto_test INFO basepage.py-102 line：With Login_input_password, Finding element ('name', 'password').
+2022-10-09 10:29:53,340 web_auto_test INFO basepage.py-151 line：With Login_input_password, send text aaaaaaaa to ('name', 'password').
+2022-10-09 10:29:53,448 web_auto_test INFO basepage.py-44 line：With Login_click_submit, Waiting for element ('class name', 'input_submit') visible.
+2022-10-09 10:29:53,473 web_auto_test INFO basepage.py-57 line：Spent 0.025 seconds, on waiting.
+2022-10-09 10:29:53,473 web_auto_test INFO basepage.py-102 line：With Login_click_submit, Finding element ('class name', 'input_submit').
+2022-10-09 10:29:53,483 web_auto_test INFO basepage.py-127 line：With Login_click_submit, Click element ('class name', 'input_submit').
+2022-10-09 10:29:54,048 web_auto_test INFO basepage.py-69 line：With Login_Get_error_msg, Waiting for page contains element ('xpath', '//div[@id="error_info"]').
+2022-10-09 10:29:54,069 web_auto_test INFO basepage.py-82 line：Spent 0.021 seconds, on waiting.
+2022-10-09 10:29:54,070 web_auto_test INFO basepage.py-102 line：With Login_Get_error_msg, Finding element ('xpath', '//div[@id="error_info"]').
+2022-10-09 10:29:54,082 web_auto_test INFO basepage.py-174 line：With Login_Get_error_msg, Get element ('xpath', '//div[@id="error_info"]') text.
+2022-10-09 10:29:54,105 web_auto_test INFO basepage.py-185 line：Text value：用户名或密码错误
+2022-10-09 10:29:54,109 web_auto_test INFO conftest.py-27 line：======== class fixture, close browser =======
