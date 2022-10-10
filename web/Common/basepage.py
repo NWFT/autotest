@@ -31,6 +31,10 @@ class BasePage:
     def __init__(self, driver: WebDriver):
         self.driver = driver
 
+    def load_page_with_url(self, url):
+        logger.info(f"Open browser with {url}, Waiting for page loading.")
+        self.driver.get(url)
+
     def wait_element_visible(self, locator, page_operation, timeout=10, poll_frequency=0.5):
         """
         Wait element visible.
