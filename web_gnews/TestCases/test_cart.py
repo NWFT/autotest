@@ -14,11 +14,11 @@ import time
 
 import pytest
 
-from web.Common.my_logger import logger
-from web.PageObjects.home_page import HomePage
-from web.PageObjects.product_list_page import ProductListPage
-from web.PageObjects.product_detail_page import ProductDetailPage
-from web.PageObjects.cart_detail_page import CartDetailPage
+from web_gnews.Common.my_logger import logger
+from web_gnews.PageObjects.home_page import HomePage
+from web_gnews.PageObjects.product_list_page import ProductListPage
+from web_gnews.PageObjects.product_detail_page import ProductDetailPage
+from web_gnews.PageObjects.cart_detail_page import CartDetailPage
 
 
 @pytest.mark.usefixtures("login", "back_home")

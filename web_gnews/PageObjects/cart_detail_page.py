@@ -1,6 +1,6 @@
 
-from web.PageElementsLocator.cart_detail_locator import CartDetailLocators as loc
-from web.Common.basepage import BasePage
+from web_gnews.PageElementsLocator.cart_detail_locator import CartDetailLocators as loc
+from web_gnews.Common.basepage import BasePage
 
 
 class CartDetailPage(BasePage):

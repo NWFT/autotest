@@ -1,8 +1,8 @@
 import logging
 import os
 
-from web.Common.config_handler import conf
-from web.Common.path_handler import logs_dir
+from web_gnews.Common.config_handler import conf
+from web_gnews.Common.path_handler import logs_dir
 
 
 class MyLogger(logging.Logger):

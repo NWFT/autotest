@@ -1,6 +1,6 @@
 
-from web.PageElementsLocator.login_page_locator import LoginPageLocators as loc
-from web.Common.basepage import BasePage
+from web_gnews.PageElementsLocator.login_page_locator import LoginPageLocators as loc
+from web_gnews.Common.basepage import BasePage
 
 
 class LoginPage(BasePage):

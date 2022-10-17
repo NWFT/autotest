@@ -21,9 +21,9 @@ from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from webdriver_manager.chrome import ChromeDriverManager
 
-from web.Common.my_logger import logger
-from web.Common.path_handler import screenshots_dir
-from web.TestData import global_data
+from web_gnews.Common.my_logger import logger
+from web_gnews.Common.path_handler import screenshots_dir
+from web_gnews.TestData import global_data
 
 
 class BasePage:
@@ -35,7 +35,7 @@ class BasePage:
         logger.info(f"Open browser with {url}, Waiting for page loading.")
         self.driver.get(url)
 
-    def wait_element_visible(self, locator, page_operation, timeout=10, poll_frequency=0.5):
+    def wait_element_visible(self, locator, page_operation, timeout=20, poll_frequency=0.5):
         """
         Wait element visible.
         :param locator: element locator, from PageElementsLocator
@@ -60,7 +60,7 @@ class BasePage:
             end = time.time()
             logger.info("Spent {:.3f} seconds, on waiting.".format(end-start))
 
-    def wait_page_contains_element(self, locator, page_operation, timeout=10, poll_frequency=0.5):
+    def wait_page_contains_element(self, locator, page_operation, timeout=20, poll_frequency=0.5):
         """
         Wait page contains element.
         :param locator: element locator, from PageElementsLocator
@@ -85,7 +85,7 @@ class BasePage:
             end = time.time()
             logger.info("Spent {:.3f} seconds, on waiting.".format(end-start))
 
-    def get_element(self, locator, page_operation, timeout=10, poll_frequency=0.5, wait=None):
+    def get_element(self, locator, page_operation, timeout=20, poll_frequency=0.5, wait=None):
         """
         Get the element after visible or page contains.
         :param locator: element's locator
@@ -116,7 +116,7 @@ class BasePage:
         else:
             return ele
 
-    def click_element(self, locator, page_operation, timeout=10, poll_frequency=0.5):
+    def click_element(self, locator, page_operation, timeout=20, poll_frequency=0.5):
         """
         Click the element. find element before the click operation.
         :param locator: element's locator
@@ -139,7 +139,7 @@ class BasePage:
             # set this case filed
             raise
 
-    def input_text(self, locator, page_operation, value, timeout=10, poll_frequency=0.5):
+    def input_text(self, locator, page_operation, value, timeout=20, poll_frequency=0.5):
         """
         Input some text value in the locator.
         :param locator: element's locator
@@ -164,7 +164,7 @@ class BasePage:
             # set this case filed
             raise
 
-    def get_text(self, locator, page_operation, timeout=10, poll_frequency=0.5):
+    def get_text(self, locator, page_operation, timeout=20, poll_frequency=0.5):
         """
         Get the text of a locator.
         :param locator: element's locator
@@ -189,7 +189,7 @@ class BasePage:
             logger.info(f"Text value：{text}")
             return text
 
-    def get_attribute(self, locator, page_operation, attr, timeout=10, poll_frequency=0.5):
+    def get_attribute(self, locator, page_operation, attr, timeout=20, poll_frequency=0.5):
         """
         Give a locator and attr-name, get the attribute value.
         :param locator: element's locator

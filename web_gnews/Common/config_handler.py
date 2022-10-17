@@ -1,7 +1,7 @@
 from configparser import ConfigParser
 import os
 
-from web.Common.path_handler import conf_dir
+from web_gnews.Common.path_handler import conf_dir
 
 
 class HandleConfig(ConfigParser):

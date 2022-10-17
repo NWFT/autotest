@@ -1,7 +1,7 @@
 import time
 
-from web.PageElementsLocator.product_detail_locator import ProductDetailLocators as loc
-from web.Common.basepage import BasePage
+from web_gnews.PageElementsLocator.product_detail_locator import ProductDetailLocators as loc
+from web_gnews.Common.basepage import BasePage
 
 
 class ProductDetailPage(BasePage):

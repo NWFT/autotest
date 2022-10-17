@@ -3,10 +3,10 @@ from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.chrome.service import Service
 
-from web.Common.my_logger import logger
-from web.PageObjects.login_page import LoginPage
-from web.TestData import global_data
-from web.TestData.global_data import normal_user, admin_user
+from web_gnews.Common.my_logger import logger
+from web_gnews.PageObjects.login_page import LoginPage
+from web_gnews.TestData import global_data
+from web_gnews.TestData.global_data import normal_user, admin_user
 
 """
 fixture: scope, yield, return value

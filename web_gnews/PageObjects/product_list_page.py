@@ -1,7 +1,7 @@
 
 
-from web.PageElementsLocator.product_list_locator import ProductListLocators as loc
-from web.Common.basepage import BasePage
+from web_gnews.PageElementsLocator.product_list_locator import ProductListLocators as loc
+from web_gnews.Common.basepage import BasePage
 
 
 class ProductListPage(BasePage):

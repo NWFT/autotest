@@ -1,7 +1,7 @@
 from selenium.webdriver import ActionChains
 
-from web.PageElementsLocator.home_page_locator import HomePageLocators as loc
-from web.Common.basepage import BasePage
+from web_gnews.PageElementsLocator.home_page_locator import HomePageLocators as loc
+from web_gnews.Common.basepage import BasePage
 
 
 class HomePage(BasePage):
