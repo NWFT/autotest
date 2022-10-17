@@ -18,19 +18,21 @@ class HomePage(BasePage):
         else:
             return True
 
-    def click_product_list(self):
+    def click_hot_people_link(self, locator=loc.hot_people_list_loc):
         """
-        Mouse over level1 item, when level2 appear, move to and click
+        Mouse over 'hot people' item, click the item
         :return:
         """
-        ele = self.get_element(loc.product_list_level1, "Homepage_Product-list-level1")
-        # mouse over the element
-        # 1. ActionChains instance
-        ta = ActionChains(self.driver)
-        # 2、mouse action
-        ta.move_to_element(ele).perform()
+        self.click_element(locator, "Homepage_Hot-people-link")
+        # # mouse over the element
+        # # 1. ActionChains instance
+        # ta = ActionChains(self.driver)
+        # # 2、mouse action
+        # ta.move_to_element(ele).perform()
 
-        # waiting for leverl-3 menu item visible, and click
-        self.click_element(loc.product_list_mobile, "Homepage_Click-to-product-list")
-
-
+    def get_hot_people_link_text(self, locator=loc.hot_people_list_text_loc):
+        """
+        get hot people link text
+        :return:
+        """
+        return self.get_text(locator, "Homepage_Get-hot-people-link-text")

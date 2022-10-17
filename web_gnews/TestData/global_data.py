@@ -9,7 +9,7 @@ import os
 IMPLICITLY_WAIT_TIME = 5
 
 # url relatives
-BASE_URL = "http://www.alex-info.ca:8000/"
+BASE_URL = "https://gnews.org/"
 
 # login
 LOGIN_URL = os.path.join(BASE_URL, "login/")
