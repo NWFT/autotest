@@ -36,6 +36,7 @@ class TestCart:
 
         :return:
         """
+        # instances all should be used in this case.
         homepage = HomePage(driver)
         product_list_page = ProductListPage(driver)
         product_detail = ProductDetailPage(driver)

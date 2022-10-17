@@ -1,0 +1,9 @@
+platformName: Android
+platformVersion: 7.0
+deviceName: emulator-5554
+appPackage: com.android.calculator2
+appActivity: com.android.calculator2.Calculator
+noReset: True
+automationName: UiAutomator2
+#newCommandTimeout: 70
+#unicodeKeyboard: True
